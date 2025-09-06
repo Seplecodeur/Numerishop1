@@ -1,46 +1,150 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catalogue Numérishop</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f9; text-align: center; margin: 0; padding: 0; }
-    header { background: #222; color: white; padding: 20px; font-size: 1.5em; }
-    .offer { background: white; margin: 20px auto; padding: 20px; border-radius: 10px; width: 90%; max-width: 400px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    .offer h2 { color: #333; }
-    .offer p { margin: 10px 0; }
-    .btn { display: inline-block; margin-top: 10px; padding: 10px 20px; background: #25d366; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-    .btn:hover { background: #1ebe57; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Numérishop - Abonnements Google</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5fbff; /* fond clair moderne */
+    color: #333;
+}
+header {
+    background: linear-gradient(135deg, #00c0ff, #0077cc);
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    margin-top: 8px;
+    font-size: 1.2em;
+}
+
+section#catalogue {
+    padding: 50px 20px;
+    text-align: center;
+}
+h2 {
+    color: #0077cc;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+/* Catalogue */
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.produit {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border: 1px solid #e6f4ff;
+}
+.produit:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 119, 204, 0.25);
+}
+
+.produit h3 {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    color: #005fa3;
+}
+
+.produit p {
+    margin-bottom: 10px;
+}
+.produit p.price {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.produit button {
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+.produit button:hover {
+    background: #005fa3;
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #0077cc;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.95em;
+}
+
+@media(max-width:600px){
+    h2{font-size:1.7em;}
+    .produit h3{font-size:1.2em;}
+    .produit p.price{font-size:1.3em;}
+}
+</style>
 </head>
 <body>
 
-<header>📦 Catalogue Numérishop</header>
+<header>
+  <h1>Numérishop</h1>
+  <p>Abonnements Google – Stockage sécurisé, rapide et fiable ☁️</p>
+</header>
 
-<div class="offer">
-  <h2>🌱 Starter – 1500 Fcfa</h2>
-  <p>Jusqu’à 25 Go<br>🔥 Bonus : les 2 premiers clients auront jusqu’à 30 Go</p>
-  <a class="btn" href="https://wa.me/24162996292?text=Bonjour,%20je%20veux%20commander%20l'offre%20Starter%20(1500Fcfa)" target="_blank">Commander sur WhatsApp</a>
-</div>
+<section id="catalogue">
+  <h2>Nos Offres Google</h2>
+  <div class="catalogue">
+    <div class="produit">
+      <h3>Starter 🚀</h3>
+      <p class="price">1500 Fcfa</p>
+      <p>25 Go de stockage Google sécurisé</p>
+      <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4tSGFonbwmhXto4HDoZ0Cl8Xlvl_t3xsDxoNnjYzm6-lZkg/viewform?usp=pp_url&entry.944230845=Starter+1500FCFA+(Jusqu%27%C3%A0+25Go)','_blank')">Commander</button>
+    </div>
+    <div class="produit">
+      <h3>Standard 💼</h3>
+      <p class="price">1800 Fcfa</p>
+      <p>40 Go de stockage Google sécurisé</p>
+      <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4tSGFonbwmhXto4HDoZ0Cl8Xlvl_t3xsDxoNnjYzm6-lZkg/viewform?usp=pp_url&entry.944230845=Standard+1800FCFA+(Jusqu%27%C3%A0+40Go)','_blank')">Commander</button>
+    </div>
+    <div class="produit">
+      <h3>Plus 🌟</h3>
+      <p class="price">2000 Fcfa</p>
+      <p>50 Go de stockage Google sécurisé</p>
+      <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4tSGFonbwmhXto4HDoZ0Cl8Xlvl_t3xsDxoNnjYzm6-lZkg/viewform?usp=pp_url&entry.944230845=Plus+2000FCFA+(Jusqu%27%C3%A0+50Go)','_blank')">Commander</button>
+    </div>
+    <div class="produit">
+      <h3>Premium 💎</h3>
+      <p class="price">5000 Fcfa</p>
+      <p>100 Go de stockage Google sécurisé</p>
+      <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4tSGFonbwmhXto4HDoZ0Cl8Xlvl_t3xsDxoNnjYzm6-lZkg/viewform?usp=pp_url&entry.944230845=Premium+5000FCFA+(Jusqu%27%C3%A0+100Go)','_blank')">Commander</button>
+    </div>
+  </div>
+</section>
 
-<div class="offer">
-  <h2>⚡ Standard – 1800 Fcfa</h2>
-  <p>Jusqu’à 40 Go</p>
-  <a class="btn" href="https://wa.me/24162996292?text=Bonjour,%20je%20veux%20commander%20l'offre%20Standard%20(1800Fcfa)" target="_blank">Commander sur WhatsApp</a>
-</div>
-
-<div class="offer">
-  <h2>🔹 Plus – 2000 Fcfa</h2>
-  <p>Jusqu’à 50 Go</p>
-  <a class="btn" href="https://wa.me/24162996292?text=Bonjour,%20je%20veux%20commander%20l'offre%20Plus%20(2000Fcfa)" target="_blank">Commander sur WhatsApp</a>
-</div>
-
-<div class="offer">
-  <h2>🌟 Premium – 2500 Fcfa</h2>
-  <p>Jusqu’à 66 Go</p>
-  <a class="btn" href="https://wa.me/24162996292?text=Bonjour,%20je%20veux%20commander%20l'offre%20Premium%20(2500Fcfa)" target="_blank">Commander sur WhatsApp</a>
-</div>
+<footer>
+  © 2025 Numérishop - Abonnements Google | Bientôt iCloud & OneDrive 🔜
+</footer>
 
 </body>
 </html>
